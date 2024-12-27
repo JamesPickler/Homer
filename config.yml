@@ -1,0 +1,216 @@
+---
+title: "Dashboard"
+subtitle: "Pickler"
+logo: "logo.png"
+# icon: "fas fa-skull-crossbones" # Optional icon
+header: true
+theme: default
+colors:
+  dark:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#131313"
+    card-background: "#2b2b2b"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#3273dc"
+    link-hover: "#EEA47F"
+# Optional message
+message:
+  #url: https://b4bz.io
+  #style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  #title: "Demo !"
+  #icon: "fa fa-grin"
+  #content: "This is a dummy homepage demo. <br /> Find more information on <a>github.com/bastienwirtz/homer</a>"
+# Optional navbar
+ links: [] # Allows for navbar (dark mode, layout, and search) without any links
+
+links:
+  - name: "Icons"
+    icon: "fa-solid fa-icons"
+    url: "https://fontawesome.com/icons/icons?f=classic&s=solid"
+    target: "_blank" # Opens new Tab
+
+  - name: "another page!"
+    icon: "fas fa-file-alt"
+    url: "#additional"
+
+  - name: "External Icons"
+    icon: "fa-solid fa-icons"
+    url: "https://github.com/NX211/homer-icons"
+    target: "_blank" # Opens new Tab
+
+  - name: "Homer GitHub"
+    icon: ""
+    url: "https://github.com/bastienwirtz/homer"
+    target: "_blank" # Opens new Tab
+
+
+# - name: "Wiki"
+#   icon: "fas fa-book"
+#   url: "https://www.wikipedia.org/"
+#   this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
+#   see url field and assets/additional-page.yml.dist used in this example:
+# - name: "another page!"
+#   icon: "fas fa-file-alt" 
+#  url: "#additional-page" 
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+
+
+
+services:
+  - name: "Networking"
+    icon: "fa-solid fa-sitemap"
+    items:
+
+      - name: "Router"
+        logo: "assets/tools/unifi.png"
+        subtitle: "Unifi Console"
+        tag: ".1"
+        #keywords: ""
+        url: "Nope!"
+        target: "_blank" # Opens new Tab
+
+      - name: "Cameras"
+        icon: "fa-solid fa-eye"
+        subtitle: "9C:8E:CD:1E:D0:06"
+        tag: ".4"
+        #keywords: ""
+        url: "http://192.168.1.4"
+        target: "_blank" # Opens new Tab
+
+      - name: "Top UPS"
+        logo: "assets/tools/apc.png"
+        subtitle: "MAC"
+        tag: ".5"
+        #keywords: ""
+        url: "http://192.168.1.5"
+        target: "_blank" # Opens new Tab
+
+      - name: "Bottom UPS"
+        logo: "assets/tools/apc.png"
+        subtitle: "MAC"
+        tag: ".6"
+        #keywords: ""
+        url: "http://192.168.1.6"
+        target: "_blank" # Opens new Tab
+
+      - name: "Cloudflare"
+        logo: "assets/tools/cloudflare.png"
+        url: "not this time!"
+        target: "_blank" # Opens new Tab
+
+  - name: "Main"
+    icon: "fa-solid fa-computer"
+    items:
+
+      - name: "TrueNAS Scale"
+        logo: "assets/tools/truenas.png"
+        url: "http://192.168.1.15/"
+        subtitle: ""
+        tag: ".15"
+        target: "_blank" # Opens new Tab
+
+      - name: "Jellyfin"
+        logo: "assets/tools/jellyfin.png"
+        url: "http://192.168.1.15:8096/"
+        subtitle: ":8096"
+        tag: ".15:8096"
+        target: "_blank" # Opens new Tab
+
+      - name: "JellySeerr"
+        logo: "assets/tools/jellyseerr.png"
+        url: "http://192.168.1.15:8090/"
+        subtitle: ":8090"
+        tag: ".15:8090"
+        target: "_blank" # Opens new Tab
+
+      - name: "Prowlarr"
+        logo: "assets/tools/prowlarr.png"
+        url: "http://192.168.1.15:8091/"
+        subtitle: ":8091"
+        tag: ".15:8091"
+        target: "_blank" # Opens new Tab
+
+      - name: "Radarr"
+        logo: "assets/tools/radarr.png"
+        url: "http://192.168.1.15:8093/"
+        subtitle: ":8093"
+        tag: ".15:8093"
+        target: "_blank" # Opens new Tab
+
+      - name: "qbittorrent"
+        logo: "assets/tools/qbittorrent.png"
+        url: "http://192.168.1.15:8095/"
+        subtitle: ":8095"
+        tag: ".15:8095"
+        target: "_blank" # Opens new Tab
+
+      - name: "Syncthing"
+        logo: "assets/tools/syncthing.png"
+        url: "http://192.168.1.15:20910/"
+        subtitle: ":20910"
+        tag: ".15:20910"
+        target: "_blank" # Opens new Tab
+
+  - name: "Mini"
+    icon: "fa-solid fa-computer"
+    items:
+
+      - name: "Proxmox Mini"
+        logo: "assets/tools/proxmox.png"
+        subtitle: "Mini"
+        tag: ".8"
+        url: "https://192.168.1.8:8006"
+        target: "_blank" # Opens new Tab
+
+      - name: "Netboot.XYZ"
+        logo: "assets/tools/netbootxyz.png"
+        url: "http://192.168.1.18"
+        tag: ".18"
+        target: "_blank" # Opens new Tab
+
+      - name: "Home Assistant"
+        logo: "assets/tools/home-assistant.png"
+        url: "http://192.168.1.7:8123"
+        tag: ".7:8123"
+        target: "_blank" # Opens new Tab
+
+  - name: "Laptop"
+    icon: "fa-solid fa-laptop"
+    items:
+
+      - name: "Proxmox"
+        logo: "assets/tools/proxmox.png"
+        url: "https://192.168.1.14:8006/"
+        tag: ".14"
+        target: "_blank" # Opens new Tab
+
+      - name: "CasaOS"
+        logo: "assets/tools/casaos.png"
+        url: "http://192.168.1.18/#/"
+        tag: ".18"
+        target: "_blank"
+
+      - name: "Immich"
+        type: "Immich"
+        apikey: "You almost had me!" # administrator user
+        updateInterval: 5000 # (Optional) Interval (in ms) for updating the stats
+        logo: "assets/tools/immich.png"
+        url: "http://192.168.1.18:2283/photos"
+        tag: ".18:2283"
+        target: "_blank"
+
+      - name: "Syncthing"
+        logo: "assets/tools/syncthing.png"
+        tag: ".18:8384"
+        url: "http://192.168.1.18:8384/"
+        target: "_blank"
+
+# End Transmission
